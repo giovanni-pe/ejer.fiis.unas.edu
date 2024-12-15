@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<meta name="viewport" content="width=device-width" />
+<link rel="shortcut icon" href="https://fiis.unas.edu.pe/sites/all/themes/business_responsive_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+<title>Validación de Certificados emitidos | FIIS</title>
+<style type="text/css" media="all">
+@import url("https://fiis.unas.edu.pe/modules/system/system.base.css?sdsmuf");
+@import url("https://fiis.unas.edu.pe/modules/system/system.menus.css?sdsmuf");
+@import url("https://fiis.unas.edu.pe/modules/system/system.messages.css?sdsmuf");
+@import url("https://fiis.unas.edu.pe/modules/system/system.theme.css?sdsmuf");
+</style>
+<style type="text/css" media="all">
+@import url("https://fiis.unas.edu.pe/sites/all/libraries/datatables/media/css/demo_table.css?sdsmuf");
+</style>
+<style type="text/css" media="all">
+@import url("https://fiis.unas.edu.pe/modules/comment/comment.css?sdsmuf");
+@import url("https://fiis.unas.edu.pe/sites/all/modules/date/date_api/date.css?sdsmuf");
+@import url("https://fiis.unas.edu.pe/modules/field/theme/field.css?sdsmuf");
+@import url("https://fiis.unas.edu.pe/modules/node/node.css?sdsmuf");
+@import url("https://fiis.unas.edu.pe/modules/search/search.css?sdsmuf");
+@import url("https://fiis.unas.edu.pe/modules/user/user.css?sdsmuf");
+@import url("https://fiis.unas.edu.pe/sites/all/modules/views/css/views.css?sdsmuf");
+@import url("https://fiis.unas.edu.pe/sites/all/modules/ckeditor/css/ckeditor.css?sdsmuf");
+</style>
+<style type="text/css" media="all">
+@import url("https://fiis.unas.edu.pe/sites/all/modules/ctools/css/ctools.css?sdsmuf");
+</style>
+<style type="text/css" media="all">
+@import url("https://fiis.unas.edu.pe/sites/all/themes/business_responsive_theme/style.css?sdsmuf");
+@import url("https://fiis.unas.edu.pe/sites/all/themes/business_responsive_theme/media.css?sdsmuf");
+</style>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://fiis.unas.edu.pe/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://fiis.unas.edu.pe/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://fiis.unas.edu.pe/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://fiis.unas.edu.pe/misc/drupal.js?sdsmuf"></script>
+<script type="text/javascript" src="https://fiis.unas.edu.pe/sites/all/libraries/datatables/media/js/jquery.dataTables.js?v=1.9"></script>
+<script type="text/javascript" src="https://fiis.unas.edu.pe/sites/all/modules/datatables/js/datatables.js?v=1.9"></script>
+<script type="text/javascript" src="https://fiis.unas.edu.pe/sites/all/themes/business_responsive_theme/js/custom.js?sdsmuf"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"business_responsive_theme","theme_token":"ERHU-kAAbMaMKOrDJzGAn_xDtSrYZK1Gvuf0dphUr2U","js":{"\/\/code.jquery.com\/jquery-1.7.2.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/datatables\/media\/js\/jquery.dataTables.js":1,"sites\/all\/modules\/datatables\/js\/datatables.js":1,"sites\/all\/themes\/business_responsive_theme\/js\/custom.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/datatables\/media\/css\/demo_table.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/business_responsive_theme\/style.css":1,"sites\/all\/themes\/business_responsive_theme\/media.css":1}},"datatables":{"#datatable-1":{"aoColumns":[{"bSortable":false},{"bSortable":false}],"aoColumnHeaders":["C\u00f3digo del Certificado","Ver m\u00e1s"],"bInfo":1,"bFilter":1,"bStateSave":0,"bLengthChange":0,"iDisplayLength":10,"bAutoWidth":0}}});
+//--><!]]>
+</script>
+<!--[if IE 8 ]>    <html class="ie8 ielt9"> <![endif]-->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body class="html not-front not-logged-in no-sidebars page-validacion-de-certificados">
+	<div id="skip-link">
+		<a href="#main-content" class="element-invisible element-focusable">Pasar al contenido principal</a>
+	</div>
+  	 <!-- /.region -->
+	
+<div id="header_wrapper">
+  <div id="inner_header_wrapper">
+
+    <header id="header" role="banner">
+            <div class="social-icons">
+       
+       <div style="text-align: right; font-size: 15px; font-weight: none; margin-top: 20px; color:#CC0000; font-weight: bold">
+                   <b>
+          Tingo María, 15 Dec, 2024         </b>
+        
+
+       </div>
+       <div style="text-align: right; margin-top: 10px">
+          <p style="color:#333399; font-weight: bold">
+          webmaster_fiis@unas.edu.pe</p>
+
+       </div>
+       <div style="font-size: 0px; text-align: right;">        
+        <a href="https://web.facebook.com/FiisOficial" target="_blank" rel="me"><img src="/sites/all/themes/business_responsive_theme/images/facebook.png" alt="Facebook"/></a>  
+       </div>
+      </div>
+          <div id="logo"><a href="/" title="Inicio"><img src="https://fiis.unas.edu.pe/sites/all/themes/business_responsive_theme/logo.png"/></a></div>
+            <h1 id="site-title">
+        <!--<a href="/" title="Inicio">FIIS</a>
+        <div id="site-description"></div>-->
+      </h1>
+      
+    <div class="clear"></div>
+    </header>
+
+    <div class="menu_wrapper">
+      <nav id="main-menu"  role="navigation">
+        <a class="nav-toggle" href="#">Menu</a>
+        <div class="menu-navigation-container">
+          <ul class="menu"><li class="first leaf"><a href="/">Inicio</a></li>
+<li class="collapsed"><a href="/nuestra-facultad" title="">Facultad</a></li>
+<li class="expanded"><a href="/departamentos-academicos" title="">Dptos Académicos</a><ul class="menu"><li class="first leaf"><a href="/dace/plana-docentes" title="">Ciencias Exactas</a></li>
+<li class="last leaf"><a href="/dacis/plana-docentes" title="">Ciencias en Informática y Sistemas</a></li>
+</ul></li>
+<li class="expanded"><a href="/escuela-profesional-de-ingenieria-en-informatica-y-sistemas">Escuela Profesional</a><ul class="menu"><li class="first last leaf"><a href="/director-de-la-escuela-profesional-de-ingenieria-en-informatica-y-sistemas" title="">Dirección</a></li>
+</ul></li>
+<li class="leaf"><a href="/unidad-de-posgrado-fiis" title="">Posgrado</a></li>
+<li class="leaf"><a href="/unidad-de-investigacion" title="">Investigación</a></li>
+<li class="leaf"><a href="/academias" title="">Academias</a></li>
+<li class="leaf"><a href="/sdtd" title="">Tramite Document.</a></li>
+<li class="last leaf active-trail"><a href="/validacion-de-certificados" title="" class="active-trail active">Validación</a></li>
+</ul>        </div>
+        <div class="clear"></div>
+      </nav><!-- end main-menu -->
+    </div>
+  </div>
+</div>
+  
+  <div id="container">
+
+    
+    <div class="content-sidebar-wrap">
+
+    <div id="content">
+      <div id="breadcrumbs"><h2 class="element-invisible">Usted está aquí</h2><nav class="breadcrumb"><a href="/">Inicio</a> » Validación de Certificados emitidos</nav></div>      <section id="post-content" role="main">
+        <div class="messages error">
+<h2 class="element-invisible">Mensaje de error</h2>
+ <ul>
+  <li>No se pudo crear el archivo.</li>
+  <li>No se pudo crear el archivo.</li>
+ </ul>
+</div>
+                        <h1 class="page-title">Validación de Certificados emitidos</h1>                                        <div class="region region-content">
+  <div id="block-system-main" class="block block-system">
+
+      
+  <div class="content">
+    <div class="view view-validacion-de-certificados view-id-validacion_de_certificados view-display-id-page view-dom-id-ba3186665e2cdfd868ce928a1481a632">
+        
+  
+  
+      <div class="view-content">
+      <table id="datatable-1" class="views-table cols-2 display">
+    
+        <div id="main-container" style="text-align: center; margin-top: 50px; position: relative;">
+            <!-- Animación navideña -->
+            <div id="snowflakes" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 999;">
+                <div class="snowflake" style="position: absolute; top: -10px; color: #ffffff; font-size: 24px; animation: fall 5s infinite linear;">❄</div>
+                <div class="snowflake" style="position: absolute; top: -10px; color: #ffffff; font-size: 24px; animation: fall 5s infinite linear;">❄</div>
+                <div class="snowflake" style="position: absolute; top: -10px; color: #ffffff; font-size: 24px; animation: fall 5s infinite linear;">❄</div>
+            </div>
+        
+            <!-- Contenido principal -->
+            <section id="main-content">
+                <h2 style="color: #cc0000; font-family: Arial, sans-serif; font-size: 24px; margin-bottom: 20px;">
+                    🎄 ¡Felicidades!
+                </h2>
+                <p style="font-size: 18px; color: #333;">
+                    Ha sido seleccionada para recibir un regalo especial por Navidad gracias a su destacada labor en la Facultad de Ingeniería Informática y de Sistemas.
+                </p>
+        
+                <!-- Botón para abrir el modal -->
+                <button id="open-modal" style="padding: 10px 20px; background: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                    Completar Datos
+                </button>
+            </section>
+        
+            <!-- Modal -->
+            <div id="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">
+                <div style="background: white; padding: 20px; border-radius: 8px; max-width: 400px; width: 90%; text-align: left; animation: fadeIn 0.5s ease;">
+                    <h3 style="color: #cc0000; font-family: Arial, sans-serif; text-align: center;">
+                        🎁 Ingrese sus Datos
+                    </h3>
+                    <form id="modal-form">
+                        <label for="name" style="font-size: 16px; color: #555;">Nombre:</label>
+                        <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px;">
+        
+                        <label for="email" style="font-size: 16px; color: #555;">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px;">
+        
+                        <label for="prize" style="font-size: 16px; color: #555;">Seleccione su premio:</label>
+                        <select id="prize" name="prize" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px;">
+                            <option value="giftcard">Tarjeta de Regalo</option>
+                            <option value="bonus">Bono Navideño</option>
+                            <option value="ham">Canasta Navideña</option>
+                        </select>
+        
+                        <button type="submit" style="width: 100%; padding: 10px; margin-top: 10px; background: #333399; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                            Reclamar Premio
+                        </button>
+                    </form>
+                    <button id="close-modal" style="padding: 10px 20px; background: #dc3545; color: white; border: none; border-radius: 5px; cursor: pointer; margin-top: 20px; width: 100%; display: block;">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            // Función para animación de nieve
+            const snowflakesContainer = document.getElementById("snowflakes");
+            for (let i = 0; i < 50; i++) {
+                const snowflake = document.createElement("div");
+                snowflake.className = "snowflake";
+                snowflake.style.left = Math.random() * 100 + "vw";
+                snowflake.style.animationDuration = Math.random() * 3 + 2 + "s";
+                snowflake.style.opacity = Math.random();
+                snowflake.style.fontSize = Math.random() * 10 + 10 + "px";
+                snowflake.textContent = "❄";
+                snowflakesContainer.appendChild(snowflake);
+            }
+        
+            // Función para el modal
+            const modal = document.getElementById("modal");
+            const openModal = document.getElementById("open-modal");
+            const closeModal = document.getElementById("close-modal");
+        
+            openModal.addEventListener("click", () => {
+                modal.style.display = "flex";
+            });
+        
+            closeModal.addEventListener("click", () => {
+                modal.style.display = "none";
+            });
+        
+            window.addEventListener("click", (event) => {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        </script>
+        
+        
+        
+  
+</div>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+      </section> <!-- /#main -->
+    </div>
+  
+      
+    </div>
+
+      
+</div>
+
+<div id="footer">
+  <div id="footer_wrapper">
+     
+      <div id="footer-area" class="clearfix">
+                <div class="column"><div class="region region-footer-first">
+  <div id="block-menu-menu-men-footer-left" class="block block-menu">
+
+        <h2 >Ubicación</h2>
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="https://www.google.com/maps/place/Facultad+de+Ingenier%C3%ADa+en+Inform%C3%A1tica+y+Sistemas/@-9.3142187,-75.9961658,18.63z/data=!4m5!3m4!1s0x0:0x79baa8ae4d9da3e3!8m2!3d-9.3139936!4d-75.9955316?hl=es-ES" title="">Cómo Llegar</a></li>
+<li class="last leaf"><a href="https:://www.unas.edu.pe" title="">Portal web UNAS</a></li>
+</ul>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-1" class="block block-block">
+
+      
+  <div class="content">
+    <div style="margin-top: 15px">Edificio FIIS del Campus Principal UNAS<br />
+Carretera Central km. 1.21<br />
+Tingo María - Huánuco, Perú</div>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+</div>
+                        <div class="column"><div class="region region-footer-second">
+  <div id="block-menu-menu-enlaces-de-interes" class="block block-menu">
+
+        <h2 >Enlaces de Interes</h2>
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="https://academico.unas.edu.pe/" title="">Sistema Académico UNAS</a></li>
+<li class="leaf"><a href="https://aulavirtual.unas.edu.pe/" title="">Aula Virtual</a></li>
+<li class="leaf"><a href="https://pagos.unas.edu.pe/" title="">Pagos virtuales UNAS</a></li>
+<li class="leaf"><a href="https://web.facebook.com/AcademiaCiscoUNAS" title="">Academia Cisco UNAS</a></li>
+<li class="last leaf"><a href="https://web.facebook.com/AcademiaVMwareUNAS" title="">VMware Academy UNAS - PE</a></li>
+</ul>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+</div>
+                        <div class="column"><div class="region region-footer-third">
+  <div id="block-menu-menu-contacto" class="block block-menu">
+
+        <h2 >Contacto</h2>
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/contact" title="">Enviar mensaje</a></li>
+<li class="last leaf"><a href="https://web.facebook.com/FiisOficial" title="">En facebook</a></li>
+</ul>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-2" class="block block-block">
+
+      
+  <div class="content">
+    <div style="margin-top: 15px">Teléfonos: 062-561009<br />
+Correo Electrónico: <a href="mailto:fiis@unas.edu.pe" target="_blank">fiis@unas.edu.pe</a></div>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+</div>
+              </div>
+      </div>
+  <div class="footer_credit">
+    <div class="footer_inner_credit">
+           <div id="foot">
+        
+      </div>
+         
+    <div id="copyright">
+     <p class="copyright" style="color: white !important">Copyright &copy; 2024, FIIS </p> <p class="credits" style="color: white !important"> Diseñado por  <a href="https://entornowebperu.com" style="color: #ccc; font-weight: bold;">Entorno Web Perú</a></p>
+    <div class="clear"></div>
+    </div>
+  </div>
+  </div>
+</div>	 <!-- /.region -->
+</body>
+</html>
